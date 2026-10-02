@@ -7,7 +7,6 @@
     android:padding="24dp">
 
     <LinearLayout
-        android:id="@+id/layoutLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -17,11 +16,10 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/txtTituloLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Breeze"
-            android:textSize="32sp"
+            android:text="Crear Cuenta"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#1B365D" />
 
@@ -30,9 +28,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="24dp"
-            android:text="Inicia sesión para registrar tu huella de movilidad"
-            android:textSize="14sp"
+            android:text="Regístrate en Breeze para calcular tu impacto"
             android:textColor="#666666" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre completo:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtRegNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Tu Nombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,7 +54,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edtUsuario"
+            android:id="@+id/edtRegCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
@@ -57,40 +70,21 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edtClave"
+            android:id="@+id/edtRegPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:layout_marginBottom="12dp"
-            android:hint="••••••••"
+            android:layout_marginBottom="24dp"
+            android:hint="Crea una contraseña"
             android:inputType="textPassword"
             android:minHeight="48dp" />
 
-        <CheckBox
-            android:id="@+id/chkRecordarme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Recuérdame en este dispositivo" />
-
         <Button
-            android:id="@+id/btnIngresar"
+            android:id="@+id/btnRegistrarUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:text="Iniciar Sesión" />
-
-        <TextView
-            android:id="@+id/txtIrARegistro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="¿No tienes cuenta? Regístrate aquí"
-            android:textColor="#0284C7"
-            android:textStyle="bold"
-            android:minHeight="48dp"
-            android:gravity="center" />
+            android:text="Registrarme" />
 
     </LinearLayout>
 
