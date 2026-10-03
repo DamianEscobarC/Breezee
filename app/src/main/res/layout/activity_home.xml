@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/breeze_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hola"
+            android:textColor="@color/breeze_text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"
+            android:text="¿Qué quieres hacer hoy en Breeze?"
+            android:textColor="@color/breeze_text_secondary"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/cardCalcularKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular Kilómetros"
+                android:textColor="@color/breeze_accent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Registra tu trayecto a pie, en bicicleta o bus para medir la distancia recorrida."
+                android:textColor="@color/breeze_text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historial de Viajes"
+                android:textColor="@color/breeze_accent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Revisa la lista de todos tus viajes registrados anteriormente."
+                android:textColor="@color/breeze_text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardImpacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Impacto Ambiental"
+                android:textColor="@color/breeze_accent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Descubre cuánto CO₂ le has ahorrado al planeta y árboles equivalentes."
+                android:textColor="@color/breeze_text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="Cerrar sesión"
+            android:textColor="#EF4444"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
