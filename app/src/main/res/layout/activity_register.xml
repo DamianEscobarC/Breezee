@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:background="@color/breeze_background"
+    android:padding="28dp">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -18,73 +19,94 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Crear Cuenta"
-            android:textSize="28sp"
+            android:text="Crear cuenta"
+            android:letterSpacing="-0.02"
+            android:textSize="32sp"
             android:textStyle="bold"
-            android:textColor="#1B365D" />
+            android:textColor="@color/breeze_text_primary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="24dp"
-            android:text="Regístrate en Breeze para calcular tu impacto"
-            android:textColor="#666666" />
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="28dp"
+            android:text="Únete a la movilidad sustentable."
+            android:textSize="15sp"
+            android:textColor="@color/breeze_text_secondary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre completo:"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:text="Nombre"
+            android:textSize="13sp"
+            android:textColor="@color/breeze_text_secondary" />
 
         <EditText
             android:id="@+id/edtRegNombre"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_height="52dp"
             android:layout_marginBottom="16dp"
-            android:hint="Tu Nombre"
+            android:background="@drawable/input_background"
+            android:hint="Damián Escobar"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/breeze_text_primary"
+            android:textColorHint="@color/breeze_text_secondary"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correo electrónico:"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:text="Correo institucional"
+            android:textSize="13sp"
+            android:textColor="@color/breeze_text_secondary" />
 
         <EditText
             android:id="@+id/edtRegCorreo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_height="52dp"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"
             android:hint="usuario@santotomas.cl"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/breeze_text_primary"
+            android:textColorHint="@color/breeze_text_secondary"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contraseña:"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:text="Contraseña"
+            android:textSize="13sp"
+            android:textColor="@color/breeze_text_secondary" />
 
         <EditText
             android:id="@+id/edtRegPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="24dp"
-            android:hint="Crea una contraseña"
+            android:layout_height="52dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/input_background"
+            android:hint="Crea una clave segura"
             android:inputType="textPassword"
-            android:minHeight="48dp" />
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/breeze_text_primary"
+            android:textColorHint="@color/breeze_text_secondary"
+            android:textSize="14sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRegistrarUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Registrarme" />
+            android:layout_height="52dp"
+            android:background="@drawable/btn_primary"
+            android:text="Registrarme"
+            android:textAllCaps="false"
+            android:textColor="#0B0F17"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

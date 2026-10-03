@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Union de variables Java con los IDs del layout XML
+
         edtUsuario = findViewById(R.id.edtUsuario);
         edtClave = findViewById(R.id.edtClave);
         chkRecordarme = findViewById(R.id.chkRecordarme);
         btnIngresar = findViewById(R.id.btnIngresar);
         txtIrARegistro = findViewById(R.id.txtIrARegistro);
 
-        // Cargar datos si el usuario activó "Recuérdame" anteriormente
+
         SharedPreferences loginPrefs = getSharedPreferences(PREFS_LOGIN, MODE_PRIVATE);
         boolean recordado = loginPrefs.getBoolean(KEY_RECORDAR, false);
         if (recordado) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             chkRecordarme.setChecked(true);
         }
 
-        // EVENTO CLIC: Abrir la pantalla de Registro mediante Intent
+
         txtIrARegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //EVENTO CLIC: Validar inicio de sesión
+
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,14 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Leer datos registrados previamente en RegisterActivity
+
                 SharedPreferences userPrefs = getSharedPreferences(RegisterActivity.PREFS_USUARIOS, MODE_PRIVATE);
                 String correoRegistrado = userPrefs.getString("correo", "");
                 String passRegistrada = userPrefs.getString("password", "");
 
-                // Validar credenciales
+
                 if (correoIngresado.equals(correoRegistrado) && claveIngresada.equals(passRegistrada)) {
-                    // Manejar persistencia de Recuérdame
+
                     SharedPreferences.Editor editor = loginPrefs.edit();
                     if (chkRecordarme.isChecked()) {
                         editor.putBoolean(KEY_RECORDAR, true);
