@@ -82,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
 
                     String nombre = userPrefs.getString("nombre", "Usuario");
                     Toast.makeText(MainActivity.this, "¡Bienvenido/a, " + nombre + "!", Toast.LENGTH_LONG).show();
+                    Intent intentHome = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(intentHome);
+                    finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Credenciales incorrectas o usuario no registrado", Toast.LENGTH_SHORT).show();
                 }
